@@ -4,7 +4,6 @@ description: Pragmatic coding standards - concise, direct, no over-engineering, 
 allowed-tools: Read, Write, Edit
 version: 3.0
 priority: CRITICAL
-# Based on https://github.com/vudovn/antigravity-kit/blob/main/.agent/skills/clean-code/SKILL.md version 2.0
 ---
 
 # Clean Code - Pragmatic AI Coding Standards
