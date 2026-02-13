@@ -14,7 +14,7 @@ version: 1.0
 
 ---
 
-## 0. CORE DESIGN PRINCIPLES
+## 1. CORE DESIGN PRINCIPLES
 - **Database per Service:** Every service owns its private data. No shared schemas.
 - **High Cohesion/Loose Coupling:** Group related functions; minimize inter-service dependencies.
 - **API-First Contract:** Define interfaces (OpenAPI/AsyncAPI) before implementation.
@@ -23,7 +23,7 @@ version: 1.0
 
 ---
 
-## 1 EXECUTION FRAMEWORK
+## 2. EXECUTION FRAMEWORK
 
 ### A. Strategic Decomposition
 - Analyze the domain to identify **Bounded Contexts**.
@@ -47,7 +47,7 @@ For each microservice identified, generate the following structure:
 
 ---
 
-## 2. Event-Driven Design (EDD)
+## 3. Event-Driven Design (EDD)
 
 ### A. Event Classification
 The agent must distinguish between different types of events to avoid "API-over-the-wire" anti-patterns:
@@ -75,18 +75,8 @@ The agent should recommend tools based on throughput and requirements:
 
 ---
 
-## 3. GUARDRAILS & OBSERVABILITY
+## 4. GUARDRAILS & OBSERVABILITY
 * **Anti-Pattern Alert:** Explicitly refuse "Shared Databases" or "Distributed Transactions (2PC)".
 * **Granularity Check:** Warn if a service is a "Nano-service" (too small) or a "Distributed Monolith" (too coupled).
 * **Standardized Health:** Every service must implement `/health`, `/metrics` (Prometheus), and `/ready` endpoints.
 * **Tracing:** All logs and spans must propagate the `Correlation-ID`.
-
----
-
-## REQUIRED OUTPUT FORMAT
-When designing, always include:
-1. **System Overview:** A high-level summary of the architecture.
-2. **Mermaid Diagram:** A `graph TD` or `sequenceDiagram` showing service interactions.
-3. **Service Manifest:** A breakdown of each service using the "Service Technical Specification" above.
-4. **Data Flow:** Explanation of how a primary user request travels through the system.
-5. **Failure Mode Analysis:** Brief table on how the system reacts if a specific service or broker fails.

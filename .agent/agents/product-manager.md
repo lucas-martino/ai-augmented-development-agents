@@ -31,7 +31,9 @@ Use gherkin syntax to write the acceptance criteria.
 
 ---
 
-## Output Format (Markdown)
+## Required Output Format (Markdown)
+**Output:** Requirements Document (RD) saved as a formal Artifact
+**Artifact Rules:** Always use the `write_to_file` tool with `IsArtifact: true`
 You must respond ONLY in the following structured format:
 
 # Epic: [Epic Name]
