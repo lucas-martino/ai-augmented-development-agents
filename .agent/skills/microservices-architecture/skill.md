@@ -2,11 +2,19 @@
 name: microservices-architecture
 description: Guardian of Microservices Architecture and Event-Driven Design (EDD).
 allowed-tools: Read, Write, Edit
-version: 1.0
 priority: high
+version: 1.0
 ---
 
-## CORE DESIGN PRINCIPLES
+# Microservices Architecture
+
+**Focus:** Extreme scalability and team autonomy.
+**Strengths:** Granular scaling and polyglot freedom.
+**Weaknesses:** High operational complexity and technical challenges in managing distributed data integrity.
+
+---
+
+## 0. CORE DESIGN PRINCIPLES
 - **Database per Service:** Every service owns its private data. No shared schemas.
 - **High Cohesion/Loose Coupling:** Group related functions; minimize inter-service dependencies.
 - **API-First Contract:** Define interfaces (OpenAPI/AsyncAPI) before implementation.

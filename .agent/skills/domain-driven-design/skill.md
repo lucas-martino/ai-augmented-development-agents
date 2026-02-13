@@ -2,17 +2,18 @@
 name: domain-driven-design
 description: Guardian of **Model-Driven Design**. The primary objective is to capture the domain expert's mental model into the software.
 allowed-tools: Read, Write, Edit
-version: 1.0
 priority: high
+version: 1.0
 ---
 
-# Domain Driven Design (DDD) - Pragmatic AI Coding Standards
-
-## 0. The "Why" (The Philosophy)
+# Domain Driven Design (DDD)
 
 **The Goal:** The primary objective is to capture the **Domain Expert's Mental Model** into the software.
-* **Code as Communication:** The code is a form of documentation. If a developer reads the code, they should understand the business rules without needing to ask the expert.
-* **Ubiquitous Language:** The language used in the code must strictly match the language spoken by domain experts *in this specific context*.
+- **Code as Communication:** The code is a form of documentation. If a developer reads the code, they should understand the business rules without needing to ask the expert.
+- **Ubiquitous Language:** The language used in the code must strictly match the language spoken by domain experts *in this specific context*.
+**Focus:** Alignment between code and the business mental model.
+**Strengths:** Ubiquitous Language and Strategic Design (Bounded Contexts) for future decomposition.
+**Weaknesses:** Steep learning curve and heavy reliance on Domain Expert availability.
 
 ---
 

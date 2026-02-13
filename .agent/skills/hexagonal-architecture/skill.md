@@ -2,13 +2,16 @@
 name: hexagonal-architecture
 description: Guardian of Hexagonal Architecture (Ports and Adapters pattern). Decouples application logic from external technologies, frameworks, and delivery mechanisms.
 allowed-tools: Read, Write, Edit
-version: 1.0
 priority: high
+version: 1.0
 ---
 
-# Hexagonal Architecture - Pragmatic Standards
+# Hexagonal Architecture (Ports & Adapters)
 
-> **CORE PRINCIPLE:** The application core is technology-agnostic. External tools are interchangeable details. Dependencies always point **INWARD**.
+**Core:** The application core is technology-agnostic. External tools are interchangeable details. Dependencies always point **INWARD**.
+**Focus:** The boundary between the application core and external services.
+**Strengths:** High interchangeability (adapters), clear side-effect definitions, and architectural simplicity.
+**Weaknesses:** Potential for "Core" logic bloat and naming ambiguity between Ports and Adapters.
 
 ---
 

@@ -2,14 +2,15 @@
 name: clean-architecture
 description: Pragmatic coding standards - concise, direct, no over-engineering, no unnecessary comments
 allowed-tools: Read, Write, Edit
-version: 1.0
 priority: high
+version: 1.0
 ---
 
-# Purpose
-To act as an architectural guardian. This skill ensures systems are decoupled from frameworks, UI, and DBs, ensuring 100% testability of business rules.
+# Clean Architecture
 
-**Focus:** Keep the business logic "Pure" and the infrastructure "Pluggable".
+**Focus:** Keep the business logic "Pure" and the infrastructure "Pluggable". Strict layering and dependency rules pointing inward.
+**Strengths:** Highly prescriptive, UI/DB independence, and maximum stability of the Core (Entities).
+**Weaknesses:** High abstraction levels, potential "Class Explosion," and risk of over-engineering simple features.
 
 ---
 
@@ -33,16 +34,16 @@ The agent must enforce the following separation of concerns, moving from the cen
 
 ---
 
-## 3 Review Checklist
-* [ ] Does the folder structure reflect business features?
-* [ ] Are all external services (DB, Auth, Email) accessed via Interfaces/Ports?
-* [ ] Is the Domain layer 100% free of framework-specific decorators/annotations?
-* [ ] Can I replace the Web Framework or Database without touching the Use Cases?
-
----
-
-## 4 Rejection Criteria (Hard Fails)
+## 3 Rejection Criteria (Hard Fails)
 - Importing frameworks (Spring, Express, FastAPI) or libraries (Prisma, SQLAlchemy) inside Entities/Use Cases.
 - Business logic or validation leaking into Controllers.
 - Use Cases returning HTTP-specific codes or Web-related objects.
 - Entities inheriting from ORM Base classes.
+
+---
+
+## 4 Review Checklist
+* [ ] Does the folder structure reflect business features?
+* [ ] Are all external services (DB, Auth, Email) accessed via Interfaces/Ports?
+* [ ] Is the Domain layer 100% free of framework-specific decorators/annotations?
+* [ ] Can I replace the Web Framework or Database without touching the Use Cases?

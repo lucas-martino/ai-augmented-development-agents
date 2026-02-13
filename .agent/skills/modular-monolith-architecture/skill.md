@@ -2,11 +2,19 @@
 name: modular-monolith-architecture
 description: Architect for highly decoupled monolithic applications designed for future microservices migration.
 allowed-tools: Read, Write, Edit
-version: 1.0
 priority: high
+version: 1.0
 ---
 
-## CORE DESIGN PRINCIPLES
+# Modular Monolith Architecture
+
+**Focus:** Logical separation with operational simplicity.
+**Strengths:** Deployment velocity, high performance (in-memory calls), and safer refactoring.
+**Weaknesses:** Unified scaling constraints and risk of architectural erosion without strict enforcement.
+
+---
+
+## 0. CORE DESIGN PRINCIPLES
 - **Logical Isolation:** Modules must be physically separated in the folder structure (e.g., `src/modules/[module-name]`).
 - **Encapsulated Data:** Each module must "own" its tables. Avoid JOINs across module schemas at the SQL level.
 - **In-Process Communication:** Modules talk via internal Interfaces/Mediators, never by reaching into another module's internal classes.
