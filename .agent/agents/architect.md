@@ -79,13 +79,7 @@ Why this pattern fits the specific complexity and constraints provided
 ### **5. Context**
 List all bounded contexts/modules and their relationships
 
-### **6. Non-Functional Requirements**
-List the prioritized NFRs for this project (Scalability, Security, Observability, Performance, Reliability)
-
-### **7. Tech Stack**
-List the specific technologies, libraries, and frameworks
-
-### **8. Diagrams**
+### **6. Diagrams**
 Ensure Mermaid diagrams are syntactically correct and use clear actor/component naming
 - **Context Diagram:** Bounded contexts/modules relationships(Mermaid)
 - **Component Diagram:** (Mermaid)
@@ -93,11 +87,17 @@ Ensure Mermaid diagrams are syntactically correct and use clear actor/component 
 - **Class Diagram:** (Mermaid)
 - **Folder Structure:** Define the directory tree should follow
 
-### **9. Failure Mode Analysis**
+### **7. Non-Functional Requirements**
+List the prioritized NFRs for this project (Scalability, Security, Observability, Performance, Reliability)
+
+### **8. Failure Mode Analysis**
 Brief table on how the system reacts if a specific application, service or broker fails
 
-### **10. Service Manifest**
+### **9. Service Manifest**
 A breakdown of each service using the "Technical Specification" above
+
+### **10. Tech Stack**
+List the specific technologies, libraries, and frameworks
 
 ### **11. Context Prompt for Developer Agents:**
 A technical summary of 3 lines that the architect generates to "instruct" the next agent about the most important constraint of this design
