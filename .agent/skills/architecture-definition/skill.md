@@ -15,6 +15,7 @@ version: 1.0
 ---
 
 ## 1. Pre-flight Check
+
 * **Domain vs. Effort:** If the domain complexity is High/Extreme, the agent MUST propose a draft of Bounded Contexts and require validation before suggesting any code patterns.
 * **Persistence and Performance:** CQRS must not be suggested without a clear justification regarding "read/write mismatch" (impedance mismatch).
 * **Legacy and ACL:** If there is integration with legacy systems, an **Anti-Corruption Layer (ACL)** must be designed obligatorily.
