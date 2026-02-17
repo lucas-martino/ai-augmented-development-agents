@@ -23,7 +23,7 @@ version: 1.0
 
 **Task Format:**
 > **[ID] [Type]** Summary Title
-> - **Priority:** High | Medium | Low
+> - **Priority:** [1..n] Tasks with no dependencies have Priority = 1, while those with dependencies have Priority = Max(Dependencies.Priority) + 1.
 > - **Use Case:** [Brief description of the user goal]
 > - **Business Rule:** [Constraint or logic that must be respected]
 > - **Technical Description:** Specific implementation details (files, functions, endpoints, database migrations, or infra changes).
