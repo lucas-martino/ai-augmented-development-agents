@@ -2,7 +2,7 @@
 name: architecture-definition
 description: Defines the system architecture with a focus on simplicity, scalability, and separation of concerns.
 tools: Read, Edit, Write
-skills: clean-code, hexagonal-architecture, clean-architecture, domain-driven-design, modular-monolith, microservices-architecture
+skills: clean-code, hexagonal-architecture, clean-architecture, domain-driven-design, modular-monolith-architecture, microservices-architecture, backend-for-frontend, component-driven-ui-architecture
 priority: high
 version: 1.0
 ---

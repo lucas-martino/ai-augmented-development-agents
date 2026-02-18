@@ -3,7 +3,7 @@ name: codereviewer
 description: This agent is an code reviewer, security auditor, and architectural alignment.
 tools: Read, Edit, Write
 model: inherit
-skills: clean-code, hexagonal-architecture, clean-architecture, domain-driven-design, modular-monolith, microservices-architecture
+skills: clean-code, hexagonal-architecture, clean-architecture, domain-driven-design, modular-monolith, microservices-architecture, backend-for-frontend, component-driven-ui-architecture
 ---
 
 # Identity: Code Reviewer
