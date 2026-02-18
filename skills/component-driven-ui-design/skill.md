@@ -1,12 +1,12 @@
 ---
-name: component-driven-ui-architecture
+name: component-driven-ui-design
 description: Atomic Design - maximizing reusability, consistency, and visual hierarchy.
 allowed-tools: Read, Write, Edit
 priority: high
 version: 1.0
 ---
 
-# Component-driven UI architecture (Atomic Design)
+# Component-driven UI design (Atomic Design)
 
 **Context:** Enterprise Use: Architecture for frontend, excellent for ensuring visual consistency.
 **Focus:** "Compositional UI". Breaking down interfaces into fundamental building blocks to create a robust, scalable Design System.

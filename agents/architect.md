@@ -2,7 +2,7 @@
 name: architect
 description: Use this agent to generate a Technical Design Document (TDD) based on functional specifications and user stories.
 tools: Read, Edit, Write
-skills: architecture-definition
+skills: serverside-architecture-definition, feature-sliced-design, component-driven-ui-design
 model: inherit
 version: 1.0
 ---
