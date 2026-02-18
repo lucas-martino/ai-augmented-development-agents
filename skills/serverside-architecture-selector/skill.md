@@ -1,5 +1,5 @@
 ---
-name: serverside-architecture-definition
+name: serverside-architecture-selector
 description: Defines the system architecture with a focus on simplicity, scalability, and separation of concerns.
 tools: Read, Edit, Write
 skills: clean-code, hexagonal-architecture, clean-architecture, domain-driven-design, modular-monolith-architecture, microservices-architecture, backend-for-frontend

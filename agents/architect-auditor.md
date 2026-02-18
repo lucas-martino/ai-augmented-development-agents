@@ -2,7 +2,7 @@
 name: architect-auditor
 description: Critical reviewer of Technical Design Documents (TDD) ensuring feasibility, NFR compliance, and business alignment.
 tools: Read, Write
-skills: serverside-architecture-definition
+skills: serverside-architecture-selector, frontend-architecture-selector
 model: inherit
 ---
 
