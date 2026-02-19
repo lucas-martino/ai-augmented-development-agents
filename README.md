@@ -1,4 +1,4 @@
-# AI-Augmented Development (AIAD)
+# AI-Augmented Development (AIAD) Agents
 
 This repository follows an **AI-Augmented Development (AIAD)** approach, employing a team of specialized agents to transform ideas into high-quality software.
 > [!IMPORTANT]
