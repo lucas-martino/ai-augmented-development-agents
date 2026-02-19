@@ -1,6 +1,8 @@
 # AI-Augmented Development (AIAD)
 
 This repository follows an **AI-Augmented Development (AIAD)** approach, employing a team of specialized agents to transform ideas into high-quality software.
+> [!IMPORTANT]
+> These agents are designed specifically for **Antigravity with Gemini 3**. Other environments may not function correctly.
 
 ## Agent Workflow
 
@@ -51,6 +53,3 @@ graph TD
 ### 4. Execution & Quality Phase
 *   **Developer (`developer.md`):** Implements the system strictly following the TDD and Clean Code standards, prioritizing infrastructure (Docker) and contracts.
 *   **Code Reviewer (`code-reviewer.md`):** Security and quality auditor ensuring architectural integrity and code health before merge.
-
----
-> Cada agente possui um arquivo de configuração específico em `agents/` que define sua identidade, objetivos e ferramentas permitidas.
