@@ -3,7 +3,7 @@ name: license-guard
 description: Aligns technical development with the chosen commercial model (Closed Source, Open Source Proprietary, Hybrid or GPL).
 allowed-tools: package_audit, license_checker, architect_code
 priority: critical
-version: 1.1
+version: 1.0
 ---
 
 # License Guard
