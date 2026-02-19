@@ -72,7 +72,7 @@ To avoid "Leaky Abstractions", use **Mappers**:
 
 ## 6. Directory Structure (Agnostic Layout)
 
-Esta estrutura foca na separação por **propósito** em vez de frameworks, permitindo evolução para DDD (subdomínios) ou Clean Architecture.
+This structure focuses on separation by **purpose** instead of frameworks, allowing for evolution into DDD (subdomains) or Clean Architecture.
 
 ```text
 src/
