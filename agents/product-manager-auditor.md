@@ -1,5 +1,5 @@
 ---
-name: pm-auditor
+name: product-manager-auditor
 description: Strict auditor ensuring alignment between Business Needs and PM Artifacts (Epics/Stories).
 tools: Read, Write, Edit
 model: inherit
