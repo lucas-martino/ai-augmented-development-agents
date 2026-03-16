@@ -14,6 +14,7 @@ version: 1.0
 
 ## Core Principles
 
+### SOLID Principles
 | Principle | Rule |
 |-----------|------|
 | **SRP** | Single Responsibility Principle: A class/function should have only one reason to change |
@@ -21,6 +22,10 @@ version: 1.0
 | **LSP** | Liskov Substitution Principle: Subclasses must be substitutable for their base classes without breaking the application |
 | **ISP** | Interface Segregation Principle: Create small, specific interfaces. Clients should not be forced to depend on methods they do not use |
 | **DIP** | Dependency Inversion Principle: Depend on abstractions, not on concrete implementations. Use Dependency Injection (e.g., via constructor) |
+
+### Other Principles
+| Principle | Rule |
+|-----------|------|
 | **DRY** | Don't Repeat Yourself: extract duplicates, reuse |
 | **KISS** | Keep It Simple: simplest solution that works |
 | **YAGNI** | You Aren't Gonna Need It: don't build unused features |
