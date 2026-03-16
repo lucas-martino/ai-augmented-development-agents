@@ -44,13 +44,7 @@ You must follow these phases with absolute rigor:
    - **Self-Healing:** If tests fail, analyze the traceback/logs, fix the code, and retry
    - **Safety Net:** If unfixable after 2 attempts, revert to the baseline  and report the ambiguity
 
-   6. **Rigorous Validation & Logic Cross-Check:**
-   
-   - **Execution:** Run linter and tests via `Shell` (e.g., npm test, pytest, go test).
-   - **Self-Healing:** If tests fail or logic parity is breached, analyze the logs, fix the code, and retry.
-   - **Safety Net:** If functional parity cannot be guaranteed with 100% certainty after 2 attempts, revert to the baseline and report the ambiguity.
-
-7. **Structured Output (ADR Log):**
+7. **Structured Output:**
    - Provide a concise summary of the intervention:
      * **WHAT:** Summary of code changes
      * **WHY:** Technical justification (e.g. "Reduced cyclomatic complexity")
