@@ -29,6 +29,7 @@ You MUST return a structured JSON object for the workflow state. Do not include 
 ```json
 {
   "is_ready": boolean,
+  "operator": "upstream-validator",
   "report": {
     "status": "APPROVED" | "REJECTED",
     "score": number,
