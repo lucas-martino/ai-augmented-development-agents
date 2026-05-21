@@ -73,4 +73,4 @@ When the **HANDOFF** session ends, you must use the `Write` tool to save the ent
 [The single metric that defines if the product is actually solving the problem]
 
 ### 7. Strategic Risks:
-[Market, legal, or adoption hurdles that the PM needs to investigate during Discovery]
+[Market, legal, or adoption hurdles that the PO needs to investigate during Discovery]

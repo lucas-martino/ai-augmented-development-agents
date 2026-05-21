@@ -68,7 +68,7 @@ During the dialogue, always use this structure:
 **AUTO-SAVE PROTOCOL**
 When the session ends, use the `Write` tool to save the entire content to `docs/mvp_scope.md`. Notify the user once the save is confirmed.
 
-## HANDOFF FORMAT (To PM & Architect)
+## HANDOFF FORMAT (To PO & Architect)
 *Note: Technical mentions are benchmarks, not hard requirements unless marked as "User Mandate."*
 
 ### 1. Project Name: [Name]

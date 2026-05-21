@@ -11,6 +11,12 @@ version: 1.0
 **Input:** Requirements Specification and Technical Design Document.
 **Output:** Structured list of backlog items.
 
+# Context
+You will receive three inputs:
+1. **[SOURCE_BUSINESS]**: User Stories and Acceptance Criteria (from PO).
+2. **[SOURCE_ARCH]**: Technical Design Document (TDD) and NFRs (from Architect).
+3. **[UI_UX_DESIGN]**: (Optional) A detailed UI/UX strategy (from UI-UX).
+
 ---
 
 ## 1. Task Breakdown Rules
@@ -23,6 +29,7 @@ version: 1.0
 
 **Task Format:**
 > **[ID] [Type]** Summary Title
+> - **Story** [ User Story ID to which this task belongs | None | Setup ]
 > - **Priority:** [1..n] Tasks with no dependencies have Priority = 1, while those with dependencies have Priority = Max(Dependencies.Priority) + 1.
 > - **Use Case:** [Brief description of the user goal]
 > - **Business Rule:** [Constraint or logic that must be respected]
@@ -39,9 +46,7 @@ version: 1.0
 
 Respond ONLY using this Markdown template. Group tasks by Epic and Feature. Ensure the priority order is logical for development (Foundational first).
 
-# Epic: [Epic Name]
+# Epic: [ Epic Id | None | Setup ]
 
-## Feature: [Feature Name]
-
-### Tasks
+## Tasks
 [ Insert the list of tasks following the format defined above, sorted by priority and logical dependency ]

@@ -1,8 +1,6 @@
 # AI-Augmented Development (AIAD) Agents
 
 This repository follows an **AI-Augmented Development (AIAD)** approach, employing a team of specialized agents to transform ideas into high-quality software.
-> [!IMPORTANT]
-> These agents are designed specifically for **Antigravity with Gemini 3**. Other environments may not function correctly.
 
 ## Agent Workflow
 
@@ -13,11 +11,11 @@ graph TD
     User[User] --> Discovery[Discovery Agent]
     Discovery --> DiscoveryAudit[Discovery Auditor]
     DiscoveryAudit -- "Fail" --> Discovery
-    DiscoveryAudit -- "Approved" --> PM[Product Manager]
+    DiscoveryAudit -- "Approved" --> PO[Product Owner]
 
-    PM --> PMAudit[PM Auditor]
-    PMAudit -- "Fail" --> PM
-    PMAudit -- "Approved" --> UX[UI/UX Designer]
+    PO --> POAudit[PO Auditor]
+    POAudit -- "Fail" --> PO
+    POAudit -- "Approved" --> UX[UI/UX Designer]
 
     UX --> Arch[Architect]
     Arch --> ArchAudit[Architect Auditor]
@@ -40,16 +38,21 @@ graph TD
 *   **Discovery Auditor (`discovery-auditor.md`):** Technical gatekeeper ensuring zero ambiguity before proceeding to functional detailing.
 
 ### 2. Product & Requirements Phase
-*   **Product Manager (`product-manager.md`):** Transforms business requirements into detailed Epics, User Stories, and Acceptance Criteria (Gherkin).
-*   **Product Manager Auditor (`product-manager-auditor.md`):** Ensures no business rules are lost or altered during translation into stories.
+*   **Product Owner (`product-owner.md`):** Transforms business requirements into detailed Epics, User Stories, and Acceptance Criteria (Gherkin).
+*   **Product Owner Auditor (`product-owner-auditor.md`):** Ensures no business rules are lost or altered during translation into stories.
 *   **UI/UX Designer (`ui-ux-designer.md`):** Creates the visual strategy, design system, and interaction flows ready for implementation.
 
 ### 3. Architecture & Engineering Phase
 *   **Architect (`architect.md`):** Designs the technical blueprint (TDD), defining patterns, Mermaid diagrams, NFRs, and tech stack.
 *   **Architect Auditor (`architect-auditor.md`):** Critical reviewer validating feasibility, security, and architectural compliance of the design.
 *   **Tech Lead (`techlead.md`):** Decomposes the technical design into a granular, actionable, and prioritized backlog.
-*   **Tech Lead Auditor (`tech-lead-auditor.md`):** Guarantees the backlog covers 100% of functional requirements and architectural constraints.
+*   **Tech Lead Auditor (`techlead-auditor.md`):** Guarantees the backlog covers 100% of functional requirements and architectural constraints.
+*   **QA Lead (`qalead.md`):** Transform business requirements into an exhaustive suite of actionable test cases.
+*   **QA Lead Auditor (`qalead-auditor.md`):** Quality Assurance Quality Gate agent ensuring that generated test suites provide 100% functional coverage without redundant or out-of-scope test cases.
 
 ### 4. Execution & Quality Phase
 *   **Developer (`developer.md`):** Implements the system strictly following the TDD and Clean Code standards, prioritizing infrastructure (Docker) and contracts.
 *   **Code Reviewer (`code-reviewer.md`):** Security and quality auditor ensuring architectural integrity and code health before merge.
+
+> [!IMPORTANT]
+> These agents are designed specifically for **Gemini 3.1+**. Other environments may not function correctly.

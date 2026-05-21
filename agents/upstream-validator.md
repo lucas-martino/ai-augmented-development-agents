@@ -35,6 +35,6 @@ You MUST return a structured JSON object for the workflow state. Do not include 
     "score": number,
     "missing_info": ["List of missing items"],
     "ambiguities": ["List of confusing points or vague terms"],
-    "recommendations": "Actionable steps for the PM to fix the requirements"
+    "recommendations": "Actionable steps for the PO to fix the requirements"
   }
 }
