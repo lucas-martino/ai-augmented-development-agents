@@ -8,33 +8,36 @@ The workflow follows a logical progression from discovery to final delivery, wit
 
 ```mermaid
 graph TD
-    User[User] --> Discovery[Discovery Agent]
-    Discovery --> DiscoveryAudit[Discovery Auditor]
+    User[User] --> Brainstorming[Brainstorming Agent]
+    Brainstorming --> Discovery[Discovery Agent]
+    Discovery --> DiscoveryAudit[Discovery Auditor Agent]
     DiscoveryAudit -- "Fail" --> Discovery
-    DiscoveryAudit -- "Approved" --> PO[Product Owner]
+    DiscoveryAudit -- "Approved" --> PO[Product Owner Agent]
 
-    PO --> POAudit[PO Auditor]
+    PO --> POAudit[PO Auditor Agent]
     POAudit -- "Fail" --> PO
-    POAudit -- "Approved" --> UX[UI/UX Designer]
+    POAudit -- "Approved" --> UX[UI/UX Designer Agent]
 
-    UX --> Arch[Architect]
-    Arch --> ArchAudit[Architect Auditor]
+    UX --> Arch[Architect Agent]
+    Arch --> ArchAudit[Architect Auditor Agent]
     ArchAudit -- "Fail" --> Arch
-    ArchAudit -- "Approved" --> TL[Tech Lead]
+    ArchAudit -- "Approved" --> TL[Tech Lead Agent]
 
-    TL --> TLAudit[Tech Lead Auditor]
+    TL --> TLAudit[Tech Lead Auditor Agent]
     TLAudit -- "Fail" --> TL
-    TLAudit -- "Approved" --> Dev[Developer]
+    TLAudit -- "Approved" --> Upstream-Validator
+    Upstream-Validator -- "Approved" --> Dev[Developer Agent - BE & FE]
 
-    Dev --> Review[Code Reviewer]
+    Dev --> Review[Code Reviewer Agent]
     Review -- "Refactor" --> Dev
-    Review -- "Approved" --> Final[Code]
+    Review -- "Approved" --> Final[Code complete]
 ```
 
 ## Agent Catalog
 
 ### 1. Strategic & Discovery Phase
-*   **Discovery (`discovery.md`):** Acts as "Quality Filter 0". Challenges the idea, isolates the real problem, and defines fundamental requirements and MVP.
+*   **Brainstorming (`brainstorming.md`):** Acts as "Quality Filter 0". Challenges the idea, isolates the real problem, and defines fundamental requirements and MVP.
+*   **Discovery (`discovery.md`):** Refines business ideas into a macro-scope document for an MVP, avoiding technical bias unless strictly required.
 *   **Discovery Auditor (`discovery-auditor.md`):** Technical gatekeeper ensuring zero ambiguity before proceeding to functional detailing.
 
 ### 2. Product & Requirements Phase
@@ -51,8 +54,18 @@ graph TD
 *   **QA Lead Auditor (`qalead-auditor.md`):** Quality Assurance Quality Gate agent ensuring that generated test suites provide 100% functional coverage without redundant or out-of-scope test cases.
 
 ### 4. Execution & Quality Phase
-*   **Developer (`developer.md`):** Implements the system strictly following the TDD and Clean Code standards, prioritizing infrastructure (Docker) and contracts.
+*   **Backend Developer (`backend-developer.md`):** Implements the system strictly following the TDD and Clean Code standards, prioritizing infrastructure (Docker) and contracts.
+*   **Frontend Developer (`frontend-developer.md`):** Implements frontend
 *   **Code Reviewer (`code-reviewer.md`):** Security and quality auditor ensuring architectural integrity and code health before merge.
+
+---
+
+## Workflow
+
+### 1. Create
+* The workflow is a structured refinement pipeline that guides a raw product idea to the development-ready state (Definition of Ready - DoR).
+
+---
 
 > [!IMPORTANT]
 > These agents are designed specifically for **Gemini 3.1+**. Other environments may not function correctly.
